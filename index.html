@@ -350,8 +350,11 @@ function linkify( selector ) {
 
 		</div>
 
+    <script type="text/javascript" src="https://cdn.goinstant.net/v1/platform.min.js"></script>
+
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
+    <script src="js/platform.js"></script>
 
 		<script>
 
@@ -375,7 +378,10 @@ function linkify( selector ) {
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
-			});
+      });
+
+      console.log('running platform');
+      runPlatform();
 
 		</script>
 
